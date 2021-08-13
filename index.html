@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/img/icon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>MilkTea</title>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container container flex">
+            <div class="header__logo">
+                <a href="#" class="logo__milktea">MilkTea</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="menu__container container grid" id="menu-container">
+            <!-- Menu -->
+            <section class="menu box">
+                <div class="navbar" id="menu-navbar">
+                    <ul class="menu__list show" id="menu-list">
+                        <div class="menu__header">DANH MỤC</div>
+                        <li class="menu__link flex" id="btn-fresh">
+                            <a href="#" class="menu__btn">Fresh Fruit Tea</a>
+                            <span class="menu__total-product">9</span>
+                        </li>
+                        <li class="menu__link flex" id="btn-macchiato">
+                            <a href="#" class="menu__btn">Macchiato</a>
+                            <span class="menu__total-product">3</span>
+                        </li>
+                        <li class="menu__link flex" id="btn-special">
+                            <a href="#" class="menu__btn">Special Drinks</a>
+                            <span class="menu__total-product">4</span>
+                        </li>
+                        <li class="menu__link flex" id="btn-beauty">
+                            <a href="#" class="menu__btn">Beauty Drinks</a>
+                            <span class="menu__total-product">4</span>
+                        </li>
+                    </ul>
+                    <i class="fas fa-times menu__close show" id="close"></i>
+                    <i class="fa fa-bars menu__toggle" id="toggle"></i>
+                </div>
+            </section>
+            <!-- Products -->
+            <section class="products" id="products">
+                <h3 class="product__title">Products</h3>
+                <div class="product-container__list grid active-food" id="macchiato">
+                    <div class="product-item" data-name="macchiato" data-price="25000" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
+                        <img src="./assets/img/Macchiato1.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Ô Long Kem Phô Mai</h3>
+                        <span class="product-item__price">25,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-name="macchiato" data-price="25000" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                        <img src="./assets/img/Macchiato2.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Dâu Tằm Kem Phô Mai</h3>
+                        <span class="product-item__price">25,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-name="macchiato" data-price="25000" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                        <img src="./assets/img/Macchiato3.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Matcha Kem Phô Mai</h3>
+                        <span class="product-item__price">25,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-container__list grid" id="specialdrink">
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100">
+                        <img src="./assets/img/SpecialDrink.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Sữa Tươi Trân Châu</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                        <img src="./assets/img/SpecialDrink1.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Matcha Đậu Đỏ</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="300">
+                        <img src="./assets/img/SpecialDrink2.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Tiger Sugar</h3>
+                        <span class="product-item__price">39,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/SpecialDrink3.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Ô Long Trân Châu Baby</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-container__list grid" id="fresh">
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh1.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Trà Dứa Hồng Bạc</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh3.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Probi Bưởi Trân Châu Sương Mai</h3>
+                        <span class="product-item__price">45,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh4.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Probi Xoài Trân Châu Sương Mai</h3>
+                        <span class="product-item__price">45,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh5.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Trà Xanh Chanh Leo</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh6.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Trà Xanh Xoài</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh7.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Trà Dứa Nhiệt Đới</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh8.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Hồng Long Pha Lê Tuyết</h3>
+                        <span class="product-item__price">40,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh9.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Hồng Long Bạch Ngọc</h3>
+                        <span class="product-item__price">40,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/fresh10.jpg" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Hồng Trà Bưởi Mật Ngọc</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-container__list grid" id="beauty">
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/beauty1.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Sữa Chua Thanh Long Hạt Dẻ</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/beauty2.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Sữa Chua Dâu Tằm Hoàng Kim</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/beauty3.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Sữa Chua Dâu Tằm Hạt Dẻ</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="product-item" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500">
+                        <img src="./assets/img/beauty1.png" alt="#" class="product-item__img">
+                        <h3 class="product-item__title">Sữa Chua Trắng</h3>
+                        <span class="product-item__price">35,000đ</span>
+                        <a href="#" class="product-item__cart" id="add__cart">
+                            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Payment -->
+            <section class="payment box">
+                <div class="payment__header flex">
+                    <p class="payment__title">Giỏ hàng của tôi</p>
+                    <a href="#" class="payment__delete">Xóa tất cả</a>
+                </div>
+                <div class="payment__product flex">
+                    <img class="payment__product-img" src="https://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/icon-glass-tea.png" alt="">
+                    <p class="payment__product-multi">x</p>
+                    <p class="number">0</p>
+                </div>
+                <button class="button payment__btn" id="payment">Thanh toán</button>
+            </section>
+        </div>
+
+        <div class="payment__alert container" id="payment-alert">
+            <h2 class="alert-title">Thanh toán</h2>
+            <h3 class="alert-subtitle">Vui lòng nhập địa chỉ giao hàng</h3>
+            <div class="form-payment flex">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <input type="text" placeholder="Địa chỉ giao hàng">
+                <!-- <textarea name="" placeholder="Ghi chú cho nhân viên giao hàng" id="" cols="82%" rows="5  "></textarea> -->
+            </div>
+            <a href=""><button class="button" id="send">Gửi</button></a>
+        </div>
+    </main>
+    <div class="footer-copy ">
+        <div class="footer-container container flex center">
+            © 2021 Đặng Văn Duy. All right reserved
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script>
+        AOS.init({
+            offset: 250,
+            duration: 1000
+        });
+    </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
